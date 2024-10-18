@@ -50,8 +50,8 @@ env:
   BUILD_CONTEXT_PATH: ./
   CHART_PATH: .
   CHART_OVERRIDE_PATH: ./values.yaml
-  CHART_OVERRIDES: image.repository=skdemoacr.azurecr.io/samples/contoso-website,image.tag=${{ github.sha }}
-  NAMESPACE: namespace-workflow-1729106288884
+  CHART_OVERRIDES: image.repository=skdemoacr.azurecr.io/samples/contoso-website,image.tag=${{ github.sha }},dsdf=v3,k1=v1,k2=v2
+  NAMESPACE: namespace-workflow-1729282511673
 
 jobs:
   buildImage:
