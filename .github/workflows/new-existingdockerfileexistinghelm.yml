@@ -48,10 +48,10 @@ env:
   CLUSTER_NAME: suminaks
   DOCKER_FILE: ./Dockerfile
   BUILD_CONTEXT_PATH: ./
-  CHART_PATH: .
+  CHART_PATH: ./src
   CHART_OVERRIDE_PATH: ./values.yaml
   CHART_OVERRIDES: image.repository=skdemoacr.azurecr.io/samples/contoso-website,image.tag=${{ github.sha }},k1=v1
-  NAMESPACE: namespace-workflow-1729285963488
+  NAMESPACE: namespace-workflow-1729286485160
 
 jobs:
   buildImage:
